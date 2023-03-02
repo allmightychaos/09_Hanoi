@@ -41,6 +41,9 @@ int main(int argc, char** argv) {
         cout << "Bitte geben Sie die Anzahl der Bewegungen an.\n> ";
         cin >> anzahl_bewegungen;
     }
+    else {
+        anzahl_bewegungen = stoi(argv[1]);
+    }
 
     Tower t1("Start", 8, true);
     Tower t2("Frei", 8, false);
